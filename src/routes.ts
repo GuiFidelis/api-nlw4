@@ -2,14 +2,14 @@ import { Router} from 'express';
 import { AnswerController } from './controller/AnswerController';
 import { NpsController } from './controller/NpsController';
 import { SendMailController } from './controller/SendMailController';
-
+import { SurveysController } from './controller/SurveysController';
 import { UserController } from './controller/UserController';
 
 const router = Router();
 
 const sendMailController = new SendMailController();
 const userController = new UserController();
-const surveysController = new surveysController();
+const surveysController = new SurveysController();
 const answerController = new AnswerController();
 const npsController = new NpsController();
 
